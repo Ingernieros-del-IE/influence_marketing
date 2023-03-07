@@ -12,7 +12,7 @@ import os
 
 load_dotenv()
 
-# We open some lists to store the relevant scrapped information
+# We open some lists to store the relevant scrapped information.
 INSTAGRAM_USER = os.getenv("Your_ig_account")
 INSTAGRAM_PASSWORD = os.getenv("Your_ig_password")
 
