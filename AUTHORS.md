@@ -1,4 +1,4 @@
-# Contributors to IFLUENCE_MARKETING
+# Contributors to INFLUENCE_MARKETING
 
 - Beltran Valle
 - Carlos Tapia 
