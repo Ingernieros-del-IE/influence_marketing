@@ -1,11 +1,16 @@
-import pandas as pd 
+import pytest
+import pandas as pd
 
-df = pd.read_csv('https://drive.google.com/file/d/1jOMJc8lQwmLYyyPaQO-UysZoauroCVDM/view?usp=share_link')
+@pytest.fixture
+def df():
+    # Replace the link below with your own shareable link
+    file_link = "https://drive.google.com/file/d/1jOMJc8lQwmLYyyPaQO-UysZoauroCVDM/view?usp=share_link"
+    return pd.read_csv(file_link)
 
-print(df.columns)
+def test_engagementRateSum(df):
+    # Here we will test that the engagement rate operation works as it should.
+    assert df['user_likes_mean'].mean() > 500
 
-def engagementRateSumTest(self): # Here we will test that the engagement rate operation works as it should. 
-    assert(df['user_likes_mean']) > 500
-
-def followersLimitTest(self): # Here we are testing that no item(influencer) is smaller than 100000 followers. 
-    assert len(df['user_followers']) > 10000
+def test_followersLimit(df):
+    # Here we are testing that no item (influencer) has less than 10000 followers.
+    assert (df['user_followers'] >= 10000).all()
