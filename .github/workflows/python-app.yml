@@ -29,6 +29,17 @@ jobs:
         pip install flake8 pytest
         pip install --upgrade pip setuptools wheel
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+    - name: Download dataset
+      env:
+        KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
+        KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
+      run: |
+        wget https://www.kaggle.com/beltrnvalle/influencer_data/download -O influencer_data.zip
+        unzip influencer_data.zip
+    - name: Unzip dataset in test directory
+      run: |
+        mkdir test/data
+        unzip influencer_data.zip -d test/data/
     - name: Lint with flake8
       run: |
         # stop the build if there are Python syntax errors or undefined names
@@ -38,3 +49,6 @@ jobs:
     - name: Test with pytest
       run: |
         pytest test/test.py
+    - name: Clean up
+      run: |
+        rm -rf influencer_data.zip
