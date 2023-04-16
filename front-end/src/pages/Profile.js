@@ -10,7 +10,7 @@ const country = "Spain";
 const hashtags = "#perfume #colonia #ponteguapa";
 const followers = "23,987";
 
-function App() {
+function Profile() {
   return (
     <div>
       <TopBar />
@@ -19,4 +19,4 @@ function App() {
   );
 }
 
-export default App;
+export default Profile;

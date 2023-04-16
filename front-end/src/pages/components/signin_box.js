@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Link } from "react-router-dom";
 import './login.css';
 
 
-function LoginBox() {
+function SigninBox() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
@@ -31,12 +31,12 @@ function LoginBox() {
 
   return (
     <div className="login-box">
-      <h2>Login</h2>
+      <h2>SignIn</h2>
       <p></p>
       <p></p>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
-          <label htmlFor="username">Username:</label>
+          <label htmlFor="username">Instagram Username:</label>
           <input
             type="text"
             id="username"
@@ -46,7 +46,27 @@ function LoginBox() {
           />
         </div>
         <div className="form-group">
-          <label htmlFor="password">Password:</label>
+          <label htmlFor="username">Country:</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            value={username}
+            onChange={handleUsernameChange}
+          />
+        </div>
+        <div className="form-group">
+          <label htmlFor="password">Create Password:</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            value={password}
+            onChange={handlePasswordChange}
+          />
+        </div>
+        <div className="form-group">
+          <label htmlFor="password">Repeat Password:</label>
           <input
             type="password"
             id="password"
@@ -57,18 +77,12 @@ function LoginBox() {
         </div>
         <div className='login-button'>
         <Link to="/home" style={buttonStyle} button>
-          LogIn
+          SignIn
         </Link>
-        </div>
-        <div className='signin'><p>If you are not registered, please click the button below to sign up:</p></div>
-        <div className='login-button'>
-          <Link to="/signin" style={buttonStyle} button>
-            SignIn
-          </Link>
         </div>
       </form>
     </div>
   );
 }
 
-export default LoginBox;
+export default SigninBox;

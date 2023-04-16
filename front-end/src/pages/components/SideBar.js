@@ -25,7 +25,7 @@ const SideBar = () => {
       <div className="sidep"><p>ingenierosdelie@ie.edu</p></div>
       <div className="sidep"><p>P.º de la Castellana, 259, 28029 Madrid</p></div>
       <h2></h2>
-      <div className="sidep"><p>©2023. Ingenieros De lIE</p></div>
+      <div className="sidep"><p>©2023. Ingenieros Del IE</p></div>
     </div>
   );
 };

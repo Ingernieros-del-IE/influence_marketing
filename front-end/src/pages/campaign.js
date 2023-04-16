@@ -1,10 +1,10 @@
 import React from 'react';
-import SquareWithImage from './components/square';
+import SquareWithImage from './components/square2';
 import TopBar from './components/TopBar';
-import SideBar from './components/SideBar';
-import './main.css';
+import './campaign.css';
+import './components/campaignTitle.css';
 
-const AnotherPage = () => {
+const Campaign = () => {
   const squares = [
     {
       imageUrl: 'https://via.placeholder.com/150',
@@ -99,12 +99,18 @@ const AnotherPage = () => {
   return (
     <div className="page">
       <TopBar />
+      <div className="title-box">
+        <h1 className="title">"Christmas Campaign"</h1>
+        <div className="subtitle">
+          <span className="brand">Perfumerías Avenida</span>
+          <span className="cost">15,035.65€</span>
+        </div>
+      </div>
       <div className="content">
-        <div className="squares">{renderSquares()}</div>
-        <SideBar />
+        <div className="squares2">{renderSquares()}</div>
       </div>
     </div>
   );
 };
 
-export default AnotherPage;
+export default Campaign;
