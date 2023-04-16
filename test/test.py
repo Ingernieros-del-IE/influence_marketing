@@ -4,7 +4,7 @@ import pandas as pd
 @pytest.fixture
 def df():
     # Replace the link below with your own shareable link
-    file_link = "https://drive.google.com/file/d/1Gb2B3QMujysVqQY1G1OjoS3BhFWCF5gu/view?usp=sharing"
+    file_link = "test/data/influencers_data.csv"
     return pd.read_csv(file_link)
 
 def test_engagementRateSum(df):
