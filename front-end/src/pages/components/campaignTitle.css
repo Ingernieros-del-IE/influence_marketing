@@ -1,0 +1,41 @@
+.title-box {
+    background-color: #f37950;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid #d46a46;
+    margin-top: -25px;
+    margin-bottom: 20px;
+  }
+  
+  .title {
+    font-size: 36px;
+    margin: 0;
+    color: #10213f;
+    font-family: Arial, sans-serif;
+  }
+  
+  .subtitle {
+    font-size: 16px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    color: #10213f;
+    font-family: Arial, sans-serif;
+  }
+  
+  .brand {
+    font-weight: bold;
+    margin-right: 10px;
+    color: #10213f;
+    font-family: Arial, sans-serif;
+  }
+  
+  .cost {
+    font-size: 14px;
+    color: #10213f;
+    font-family: Arial, sans-serif;
+  }
+  

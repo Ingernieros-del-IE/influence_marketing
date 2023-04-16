@@ -1,0 +1,56 @@
+.user-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 200px;
+  }
+  
+  .profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  
+  .name {
+    font-size: 28px;
+    font-weight: bold;
+    color: #f37930;
+    font-family: Arial, sans-serif;
+  }
+  
+  .bio {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    margin-top: -5px;
+    color: #10213f;
+    font-family: Arial, sans-serif;
+  }
+  
+  .email {
+    font-size: 16px;
+    margin-bottom: 0px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .hashtags {
+    font-size: 16px;
+    font-style: italic;
+    margin-bottom: 10px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .followers {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: Arial, sans-serif;
+  }

@@ -1,0 +1,65 @@
+.square {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    background-color: #F0F0F0;
+    border: 1px solid #cccccc;
+  }
+  
+  .circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-top: 5px;
+  }
+  
+  .name {
+    font-size: 24px;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .name a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .name a:hover {
+    color: #ffffff;
+  }
+  
+  .text {
+    font-size: 10px;
+    color: #666666;
+    margin-top: 0px;
+    margin-bottom: 7px;
+    font-family: Arial, sans-serif;
+  }
+
+  .add-to-campaign-button {
+    background-color: #f37930;
+    color: #10213f;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+
+  .added {
+    color: #10213f;
+    font-family: Arial, sans-serif;
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid #10213f;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    margin-top: 7px;
+  }

@@ -1,0 +1,22 @@
+.squares2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 960px;
+    margin: 0 auto;
+
+  }
+  
+  .square-container {
+    width: 30%;
+    margin-bottom: 20px;
+  }
+
+  .content {
+    display: flex;
+  }
+  
+  .squares {
+    flex: 1;
+  }
+  
