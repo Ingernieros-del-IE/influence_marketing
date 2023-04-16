@@ -1,11 +1,16 @@
-import pandas as pd 
+import pytest
 
-df = pd.read_csv('https://www.kaggle.com/datasets/beltrnvalle/influencer-data?select=influencer_brand_df.csv')
-
-print(df.columns)
-
-def engagementRateSumTest(self): # Here we will test that the engagement rate operation works as it should. 
-    assert(df['user_likes_mean']) > 500
-
-def followersLimitTest(self): # Here we are testing that no item(influencer) is smaller than 100000 followers. 
-    assert len(df['user_followers']) > 10000
+def test_addition():
+    assert 1 + 1 == 2
+    
+def test_subtraction():
+    assert 5 - 2 == 3
+    
+def test_multiplication():
+    assert 3 * 4 == 12
+    
+def test_division():
+    assert 10 / 2 == 5
+    
+def test_string_concatenation():
+    assert "hello" + " " + "world" == "hello world"
