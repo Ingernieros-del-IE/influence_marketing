@@ -34,7 +34,7 @@ jobs:
         KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
         KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
       run: |
-        wget https://www.kaggle.com/beltrnvalle/influencer_data/download -O influencer_data.zip
+        wget https://www.kaggle.com/datasets/beltrnvalle/influencer-data/download?datasetVersionNumber=1 -O influencer_data.zip
         unzip influencer_data.zip
     - name: Unzip dataset in test directory
       run: |
