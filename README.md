@@ -3,6 +3,7 @@
 
 ![alt text](influence_marketing_lib\utils\logo.png)
 
+
 We have created a recommender to connect brands with influencers for marketing campaigns. The variables that we are using are 'user_Name, 'followers', 'user_Description', 'likes', 'post_Description', 'location', 'hashtags', 'post_Url',	'engagement_rate', 'hashtags_translated', 'all_descriptions', 'translated'and 'max_category'. 
 
 We are using two dataset obtained by data scrapping, one for brands and one for influencers. After combining and obtaining the relationships between the two datasets, we obtain a dataset with more than 200 000 rows.
