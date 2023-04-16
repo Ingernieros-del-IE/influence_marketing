@@ -1,6 +1,6 @@
 import pandas as pd 
 
-df = pd.read_csv('../input/beltrnvalle/influencer-data.csv')
+df = pd.read_csv('https://www.kaggle.com/datasets/beltrnvalle/influencer_brand_df.csv')
 
 print(df.columns)
 
