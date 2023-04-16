@@ -1,0 +1,41 @@
+.range-slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .range-slider h3 {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    color: #10213f;
+  }
+  
+  .range-slider label {
+    margin-bottom: 8px;
+  }
+  
+  .range-slider input[type="range"] {
+    width: 100%;
+  }
+  
+  .range-slider p {
+    margin-top: 8px;
+    font-size: 10px;
+    font-family: Arial, sans-serif;
+    color: #000000
+  }
+
+  .prange {
+    margin-top: 8px;
+    font-size: 10px;
+    font-family: Arial, sans-serif;
+    color: #000000
+  }
+  
+  

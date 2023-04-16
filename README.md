@@ -1,7 +1,7 @@
 # INFLUENCE MARKETING RECOMMENDER 
 =========================================
 
-![alt text](http://url/to/img.png)
+![alt text](influence_marketing_lib\utils\logo.png)
 
 We have created a recommender to connect brands with influencers for marketing campaigns. The variables that we are using are 'user_Name, 'followers', 'user_Description', 'likes', 'post_Description', 'location', 'hashtags', 'post_Url',	'engagement_rate', 'hashtags_translated', 'all_descriptions', 'translated'and 'max_category'. 
 
